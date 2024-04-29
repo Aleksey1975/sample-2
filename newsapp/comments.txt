@@ -1,0 +1,8 @@
+
+
+
+класс F
+Чтобы получить доступ к новому значению, сохраненному таким образом, объект должен быть перезагружен:
+reporter = Reporters.objects.get(pk=reporter.pk)
+# Or, more succinctly:
+reporter.refresh_from_db()
