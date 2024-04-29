@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
 </head>
 <body>
-$END$
+{{ done }}
+<h3>Authors</h3>
+{% for author in authors %}
+<p>{{ author }} -  rating:{{ author.rating }}</p>
+{% endfor %}
+
+<h3>Posts</h3>
+{% for post in posts %}
+<p>{{ post }} - rating: {{ post.rating }} </p>
+{% endfor %}
 </body>
 </html>
